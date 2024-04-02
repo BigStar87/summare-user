@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Резюме</title>
+</head>
+
+<style>
+	input {
+		display: block;
+		width: 300px;
+		height: 30px;
+		margin-bottom: 10px;
+	}
+
+	button {
+		margin-top: 10px;
+		width: 310px;
+		height: 30px;
+		background-color: green;
+		border: none;
+	}
+</style>
+
+<body>
+	<h1>Резюме</h1>
+	<form action="addNewFile.php" method="post" enctype="multipart/form-data">
+		<div>
+			<input type="file" name="file">
+		</div>
+		<div>
+			<label>ФИО:</label>
+			<input type="text" name="name" placeholder="Иванов Иван Иванович">
+		</div>
+		<div>
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="Ivan@gmail.com">
+		</div>
+		<div>
+			<label>Номер телефона:</label>
+			<input type="tel" name="phone" placeholder="+7(000)000-00-00">
+		</div>
+		<div>
+			<label>Университет:</label>
+			<input type="text" name="university" placeholder="МГУ">
+		</div>
+		<div>
+			Специальность:
+			<input type="text" name="speciality" placeholder="Веб-разработчик">
+		</div>
+		<div>
+			<label>Окончание обучения:</label>
+			<input type="text" name="year_of_ending" placeholder="2000">
+		</div>
+		<div>
+			<label>Компания:</label>
+			<input type="text" name="company" placeholder="Компания в которой вы работаете/работали">
+		</div>
+		<div>
+			<label>Должность:</label>
+			<input type="text" name="job_title" placeholder="Введите должность">
+		</div>
+		<div>
+			<label>Стаж начало - окончание:</label>
+			<input type="text" name="years" placeholder="2000 - 2010">
+		</div>
+		<div>
+			<div>
+				<label>О себе:</label>
+			</div>
+			<textarea name="about" cols="36" rows="10" placeholder="Введите ваши навыки"></textarea>
+		</div>
+		<div>
+			<button type="submit">Отправить</button>
+		</div>
+	</form>
+</body>
+</html>
